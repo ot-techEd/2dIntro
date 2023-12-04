@@ -5,6 +5,8 @@ using UnityEngine;
 public class GroundCheck : MonoBehaviour
 {
     public CollisionCheck collisionCheck;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,15 @@ public class GroundCheck : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             collisionCheck.UpdateScore(-1);
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
+            collisionCheck.SetBallPosition(collision.transform);
         }
         else if (collision.gameObject.CompareTag("Bonus"))
         {
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
+            collisionCheck.SetBallPosition(collision.transform);
         }
     }
+
+
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8369187811992658616}
   - component: {fileID: 4832840099602960576}
   - component: {fileID: 5763819729938437348}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bonus
   m_TagString: Bonus
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &5763819729938437348
 CircleCollider2D:
   m_ObjectHideFlags: 0
